@@ -3,7 +3,6 @@ package com.example.timesnews.presentation.search
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.statusBarsPadding
@@ -13,8 +12,7 @@ import androidx.paging.compose.collectAsLazyPagingItems
 import com.example.timesnews.domain.model.Article
 import com.example.timesnews.presentation.Dimens.MediumPadding1
 import com.example.timesnews.presentation.common.ArticlesList
-import com.example.timesnews.presentation.navgraph.Route
-import com.loc.newsapp.presentation.common.SearchBar
+import com.example.timesnews.presentation.common.SearchBar
 
 @Composable
 fun SearchScreen(

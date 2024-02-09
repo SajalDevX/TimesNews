@@ -1,11 +1,8 @@
-package com.loc.newsapp.presentation.common
+package com.example.timesnews.presentation.common
 
 import TimesNewsTheme
 import android.content.res.Configuration.UI_MODE_NIGHT_YES
-import android.text.format.Time
-import android.util.Log
 import androidx.compose.foundation.border
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.interaction.collectIsPressedAsState
 import androidx.compose.foundation.isSystemInDarkTheme
@@ -13,10 +10,8 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
-import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -36,7 +31,6 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.timesnews.R
 import com.example.timesnews.presentation.Dimens.IconSize
-import kotlinx.coroutines.launch
 
 @Composable
 fun SearchBar(
@@ -52,8 +46,8 @@ fun SearchBar(
         MutableInteractionSource()
     }
     val isClicked = interactionSource.collectIsPressedAsState().value
-    LaunchedEffect(key1 = isClicked){
-        if(isClicked){
+    LaunchedEffect(key1 = isClicked) {
+        if (isClicked) {
             onClick?.invoke()
         }
     }

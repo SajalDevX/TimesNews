@@ -7,6 +7,8 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -47,34 +49,30 @@ fun ArticleCard(
     val context = LocalContext.current
 
     Row(
-        modifier = modifier.clickable { onClick?.invoke() },
-
-        ) {
-        AsyncImage(
-            modifier = Modifier
-                .height(ArticleCardSize)
-                .width(140.dp)
-                .clip(MaterialTheme.shapes.medium),
-            model = ImageRequest.Builder(context).data(article.urlToImage).build(),
-            contentDescription = null,
-            contentScale = ContentScale.Crop
-        )
+        modifier = Modifier.clickable {
+            onClick?.invoke()
+        },
+    ) {
         Spacer(modifier = Modifier.width(15.dp))
         Column(
             verticalArrangement = Arrangement.SpaceAround,
             modifier = Modifier
+                .fillMaxWidth(0.6f)
                 .padding(horizontal = ExtraSmallPadding)
                 .height(ArticleCardSize)
         ) {
             Text(
                 text = article.title,
-                style = MaterialTheme.typography.bodyMedium.copy(),
+                style = MaterialTheme.typography.bodyMedium.copy(
+                    fontWeight = FontWeight.SemiBold
+                ),
 //                color = colorResource(id = R.color.text_title),
                 color = MaterialTheme.colorScheme.onTertiaryContainer
-                ,
-                maxLines = 2,
-                overflow = TextOverflow.Ellipsis
+//                ,
+//                maxLines = 2,
+//                overflow = TextOverflow.Ellipsis
             )
+            Spacer(modifier = Modifier.height(3.dp))
             Column(
                 verticalArrangement = Arrangement.Center
             ) {
@@ -104,7 +102,17 @@ fun ArticleCard(
 
                 }
             }
+
         }
+        AsyncImage(
+            modifier = Modifier
+                .height(ArticleCardSize)
+                .width(140.dp)
+                .clip(MaterialTheme.shapes.medium),
+            model = ImageRequest.Builder(context).data(article.urlToImage).build(),
+            contentDescription = null,
+            contentScale = ContentScale.Crop
+        )
     }
 }
 

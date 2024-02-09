@@ -21,6 +21,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
 import com.example.timesnews.domain.model.Article
@@ -80,12 +81,13 @@ fun DetailsScreen(
                         .clip(MaterialTheme.shapes.medium),
                     contentScale = ContentScale.Crop
                 )
-                Spacer(modifier = Modifier.height(MediumPadding1))
+                Spacer(modifier = Modifier.height(50.dp))
                 Text(
                     text = article.title,
                     style = MaterialTheme.typography.displaySmall,
                     color = Color.DarkGray
                 )
+                Spacer(modifier = Modifier.height(MediumPadding1))
                 Text(
                     text = article.content,
                     style = MaterialTheme.typography.bodyMedium,
