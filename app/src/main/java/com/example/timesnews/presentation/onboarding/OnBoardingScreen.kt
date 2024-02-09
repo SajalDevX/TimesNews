@@ -19,21 +19,19 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.dp
 import com.example.timesnews.presentation.Dimens.MediumPadding2
 import com.example.timesnews.presentation.Dimens.PagerIndicatorWidth
 import com.example.timesnews.presentation.common.NewsButton
 import com.example.timesnews.presentation.common.NewsTextButton
 import com.example.timesnews.presentation.onboarding.components.OnBoardingPage
 import com.example.timesnews.presentation.onboarding.components.PageIndicator
-import com.example.timesnews.ui.theme.TimesNewsTheme
-import com.example.timesnews.ui.theme.pages
 import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
-fun OnBoardingScreen() {
+fun OnBoardingScreen(
+    event: (OnBoardingEvent) -> Unit
+) {
     Column(
         modifier = Modifier.fillMaxSize()
     ) {
@@ -72,7 +70,6 @@ fun OnBoardingScreen() {
                 pageSize = pages.size,
                 selectedPage = pagerState.currentPage
             )
-
             Row(
                 verticalAlignment = Alignment.CenterVertically
             ) {
@@ -95,8 +92,8 @@ fun OnBoardingScreen() {
                     text = buttonState.value[1],
                     onClick = {
                         scope.launch {
-                            if (pagerState.currentPage == 3) {
-                                //Navigate to HomeScreen
+                            if (pagerState.currentPage == 2) {
+                                event(OnBoardingEvent.SaveAppEntry)
                             } else {
                                 pagerState.animateScrollToPage(
                                     page = pagerState.currentPage + 1
@@ -110,10 +107,3 @@ fun OnBoardingScreen() {
     }
 }
 
-@Preview(showBackground = true)
-@Composable
-fun OnBoardingPagePreview() {
-    TimesNewsTheme {
-        OnBoardingScreen()
-    }
-}
