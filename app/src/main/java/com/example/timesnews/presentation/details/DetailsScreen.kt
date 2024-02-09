@@ -17,13 +17,12 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.tooling.preview.Preview
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
-import com.example.timesnews.R
 import com.example.timesnews.domain.model.Article
 import com.example.timesnews.domain.model.Source
 import com.example.timesnews.presentation.Dimens.ArticleImageHeight
@@ -57,7 +56,7 @@ fun DetailsScreen(
                 }
             },
             onBookMarkClick = {
-                event(DetailsEvent.SaveArticle)
+                event(DetailsEvent.UpsertDeleteArticle(article))
             },
             onBackClick = navigateUp
         )
@@ -85,16 +84,12 @@ fun DetailsScreen(
                 Text(
                     text = article.title,
                     style = MaterialTheme.typography.displaySmall,
-                    color = colorResource(
-                        id = R.color.text_title
-                    )
+                    color = Color.DarkGray
                 )
                 Text(
                     text = article.content,
                     style = MaterialTheme.typography.bodyMedium,
-                    color = colorResource(
-                        id = R.color.body
-                    )
+                    color = Color.Gray
                 )
             }
         }
