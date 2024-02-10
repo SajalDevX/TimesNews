@@ -1,3 +1,8 @@
+
+Problem Statement:
+
+College students face the challenge of staying informed amidst their busy schedules. With numerous information sources available, they struggle to find relevant news aligned with academic interests. There's a need for a tailored news app providing curated content, personalized recommendations, and features promoting critical thinking. Such an app would empower students to stay informed, enhancing their learning experience and fostering a deeper understanding of the world.
+
 News App:
 
 An Android app built with Jetpack Compose and the latest android libraries
