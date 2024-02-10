@@ -3,6 +3,14 @@ Problem Statement:
 
 College students face the challenge of staying informed amidst their busy schedules. With numerous information sources available, they struggle to find relevant news aligned with academic interests. There's a need for a tailored news app providing curated content, personalized recommendations, and features promoting critical thinking. Such an app would empower students to stay informed, enhancing their learning experience and fostering a deeper understanding of the world.
 
+Solution:
+
+Our solution is to develop a user-centric news app tailored specifically for college students. This app will utilize advanced algorithms to aggregate news from reputable sources, curate content based on users' academic interests and preferences, and deliver personalized recommendations. Features such as customizable news feeds, topic-based browsing, and fact-checking tools will enhance user engagement and promote critical thinking. Additionally, integration with academic calendars and campus events will ensure students stay informed about relevant happenings in their academic community. By providing a seamless and intuitive platform for accessing reliable news, our app aims to empower college students to make informed decisions and enrich their educational experience.
+
+Future Scope:
+
+In future I will be Implementing some more APIs in the app to gather more news data from the web. I will also try to make a User login interface with firebase. Also there will be diferent specific sections in the app that will give you news regarding specific topics
+
 News App:
 
 An Android app built with Jetpack Compose and the latest android libraries
