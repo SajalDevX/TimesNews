@@ -1,4 +1,5 @@
 News App:
+
 An Android app built with Jetpack Compose and the latest android libraries
 
 ![IMG-20240210-WA0007](https://github.com/SajalJana2004/TimesNews/assets/145244794/ba734f97-b484-4e20-a492-a1c970cd357e)
@@ -14,4 +15,5 @@ An Android app built with Jetpack Compose and the latest android libraries
 ![IMG-20240210-WA0002](https://github.com/SajalJana2004/TimesNews/assets/145244794/b5c3e07f-2c85-4049-b66b-a3ae714cada3)
 
 Things I Used To Build The App
-<img width="716" alt="262679258-f9e80bb2-f066-4b90-a537-55d4e0bf07ca" src="https://github.com/SajalJana2004/TimesNews/assets/145244794/8abdabae-3e4f-4360-afee-86b8ed370ff9">
+
+<img width="716" alt="262679258-f9e80bb2-f066-4b90-a537-55d4e0bf07ca" src="https://github.com/SajalJana2004/TimesNews/assets/145244794/25984834-568c-4604-b46e-48948ca62c3d">
