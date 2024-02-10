@@ -1,6 +1,17 @@
+News App:
+An Android app built with Jetpack Compose and the latest android libraries
 
-![262676788-0ba957e5-8b70-42d6-ab09-2cf38ba3936e](https://github.com/SajalJana2004/TimesNews/assets/145244794/569724ea-8727-4936-a839-26d42d13098f) 
+![IMG-20240210-WA0007](https://github.com/SajalJana2004/TimesNews/assets/145244794/ba734f97-b484-4e20-a492-a1c970cd357e)
 
-![262676811-6dda119b-1b3f-4637-91a4-314b85eda214](https://github.com/SajalJana2004/TimesNews/assets/145244794/b59cdca7-61d7-494b-a870-f6ef26eda16b)
+![IMG-20240210-WA0006](https://github.com/SajalJana2004/TimesNews/assets/145244794/bb5f9539-8c3c-436d-b091-6486938a17c2)
 
-![262676840-6e7186fa-9c05-4705-b568-8326cc99c17f](https://github.com/SajalJana2004/TimesNews/assets/145244794/542c00cb-f875-4141-a332-1a4a76f4ad6a)
+![IMG-20240210-WA0005](https://github.com/SajalJana2004/TimesNews/assets/145244794/f10bf45b-60ae-4154-a2ab-98d0304c28e6)
+
+![IMG-20240210-WA0004](https://github.com/SajalJana2004/TimesNews/assets/145244794/f768c1a2-7029-4874-b396-4acf20664727)
+
+![IMG-20240210-WA0003](https://github.com/SajalJana2004/TimesNews/assets/145244794/0d4f092c-ef38-4992-876d-db0d3843a348)
+
+![IMG-20240210-WA0002](https://github.com/SajalJana2004/TimesNews/assets/145244794/b5c3e07f-2c85-4049-b66b-a3ae714cada3)
+
+Things I Used To Build The App
+<img width="716" alt="262679258-f9e80bb2-f066-4b90-a537-55d4e0bf07ca" src="https://github.com/SajalJana2004/TimesNews/assets/145244794/8abdabae-3e4f-4360-afee-86b8ed370ff9">
